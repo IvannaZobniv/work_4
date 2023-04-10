@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Об'єднання селекторів</title>
+<style type="text/css">
+/*Об'єднання tags + id
+p#in{
+	color:#0f0;
+}
+*/
+
+/*Об'єднання tags + class*/
+.last{color:#ff3300;}
+body p:last-child{color:#0f0;}
+
+/**/
+
+/*Об'єднання class + class
+.news{color:#f00;}
+.news.last{color:#0f0;}
+*/
+
+/*Об'єднання class + pseudo-class
+.news:hover{color:#0f0;}
+*/
+
+/*Об'єднання class + pseudo-elements
+.news:first-letter{color:#0f0;}
+*/
+
+/*Об'єднання class + attributes
+.begin[title]{color:#0f0;}
+*/
+
+/*Об'єднання attributes + pseudo-elements
+[title]:first-letter{color:#0f0;}
+*/
+
+/*Об'єднання pseudo-class + pseudo-class
+:first-child:hover{color:#0f0;}
+:visited:hover{color:#f00;}
+*/
+
+/*Об'єднання attributes + attributes
+[class][title]{color:#0f0;}*/
+
+
+/*Об'єднання tags + id + class + attributes + pseudo-class
+p#in.begin[title]:hover{color:#0f0;}*/
+
+
+/*Об'єднання tags + id + class + attributes + pseudo-elements + pseudo-class
+p#in.begin[title][class][id]:first-child:first-letter{
+	color:#ff0000;
+}
+*/
+
+</style>
+</head>
+<body>
+	<p id="in" class="begin" title="Подсказка">Зміст p (#in .begin)</p>
+	<p class="news">Зміст p (.news)</p>
+	<div class="news">Зміст div (.news)</div>
+	<p class="news last">Зміст p (.news .last)</p>
+</body>
+</html>

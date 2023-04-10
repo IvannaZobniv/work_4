@@ -1,0 +1,23 @@
+body {
+    background-color: #edfcfc;
+    font-family: arial, verdana, sans-serif;
+    color: #6a6969;
+}
+.h1{
+    color: red;
+    text-align: center;
+    background: #695acb;
+}
+h1,h2,h3,h4,h5,h6{
+    color: #fd9f79;
+}
+pre{
+    color: red;
+}
+.font-family{
+    font-family: arial, verdana, sans-serif;
+    color: #6a6969;
+}
+div{
+    text-align: right;
+}

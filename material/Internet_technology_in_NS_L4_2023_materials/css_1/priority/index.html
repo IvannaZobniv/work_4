@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>Пріоритет правил CSS</title>
+<style type="text/css">
+/*Пріоритет tags
+div p{color:#f00;}
+p#in{color:#0f0;}
+#in{color:#336699}
+*/
+
+/*Пріоритет id
+#top #in{color:#f00;}
+p#in{color:#0f0;}
+*/
+
+/*Пріоритет class*/
+p[id][class].news{
+	color:#0f0!important;
+}
+.text .news{color:#f00;}
+
+
+/*Равный Пріоритет
+p{color:#f0f !important;}
+div.text #in{color:#f00;}
+#top p.news{color:#0f0;}
+ul{
+	list-style: outside square url("../icon_yes2.png");
+}
+*/
+/*p#in{color:#0f0 !important;}
+
+
+style="color:#369 !important;"*/
+</style>
+</head>
+<body>
+	<div id="top" class="text">
+		<!--<p id="in" class="news" style="color:#369 !important;">Вміст блоку</p>-->
+		<p id="in" class="news" style="color: #336699 !important;">Вміст блоку</p>
+	</div>
+	<ul>
+		<li>Lorem ipsum dolor sit amet</li>
+		<li>Consectetuer adipiscing elit</li>
+		<li>Sed diem nonummy nibh euismod</li>
+		<li>Tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis
+			enim ad minim veniam, quis nostrud exerci tution ullamcorper suscipit lobortis
+			nisl ut aliquip ex ea commodo consequat.Tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis
+			enim ad minim veniam, quis nostrud exerci tution ullamcorper suscipit lobortis
+			nisl ut aliquip ex ea commodo consequat.</li>
+	</ul>
+</body>
+</html>

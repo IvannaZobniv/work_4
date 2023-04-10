@@ -1,0 +1,42 @@
+body{
+    background: #f6f6f7;
+}
+p{
+    color: #336699;
+    background-color: rgba(204, 255, 221, 0.3);
+    font-size: 1.12em;
+}
+div{
+    /*font-family: "Helvetika", "Segoe UI", sans-serif;
+    font-size: 1.12em;
+    font-weight: 600;
+    font-style: italic;
+    font-variant: small-caps;*/
+    font: 1.12em "Helvetika", "Segoe UI", sans-serif;
+    //text-align: right;
+    text-indent: 30px;
+    /*background-image: url("../nasa.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;*/
+    background: center fixed no-repeat url("../nasa.gif");
+}
+span{
+    font-style: italic;
+    //text-decoration: underline;
+    //text-transform: uppercase;
+    //letter-spacing: -5px;
+    //vertical-align: super;
+    //line-height: 20px;
+}
+a{
+    text-decoration: none;
+    line-height: 40px;
+    //display: block;
+}
+ul {
+    /*list-style-type: circle;
+    list-style-position: inside;
+    list-style-image: url("../icon_yes2.png");*/
+    list-style: circle inside url("../icon_yes2.png");
+}

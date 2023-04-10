@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Селектори атрибутів</title>
+<style type="text/css">
+	[title]{
+		color:#369;
+	}
+	[title*="Олександр"]{
+		background-color: moccasin;
+		/*background-image: url("../nasa.gif");
+		background-repeat: no-repeat;
+		background-position: right center;*/
+	}
+	[href]{
+		background-image:url("icon.png");
+		background-repeat: no-repeat;
+		padding-left: 20px;
+		line-height: 60px;
+	}
+	[href^="http"]{
+		background-position:0 -32px;
+	}
+	[href$=".doc"]{
+		background-position:-16px -16px;
+	}
+	[href$=".pdf"]{
+		background-position:-32px 0;
+	}
+
+</style>
+</head>
+<body class="bd">
+	<p title="">Параграф з пустим title</p>
+	<p title="Олександр I" style="line-height: 50px">Параграф з title "Олександр I"</p>
+	<p title="Олександр Пушкин">Параграф з title "Олександр Пушкин"</p>
+	<p title="Олександрійський маяк">Параграф з title "Олександрійський маяк"</p>
+	<p>
+		<a href="http://google.com/">Зовнішнє посилання</a>
+		<a href="/docs/1.pdf">файл pdf</a> 
+		<a href="/docs/2.doc">файл doc</a>
+	</p>
+</body>
+</html>

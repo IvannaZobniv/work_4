@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Комбінації селекторів</title>
+<style type="text/css">
+/*strong{font-size:3em;color:#f30;}*/
+
+/* Контекстний селектор - предки-нащадки*/
+div strong{
+	font:2em calibri;
+	color:#f0f;
+}
+
+
+/* Дочірній селектор - батько-дитина */
+
+div > strong{
+	font:2em calibri;
+	color:#ff0000;
+}
+/*
+div p>strong.cl[title], h1, p:last-child>strong{
+	font:2em calibri;
+	color:#336699;
+}
+*/
+/* Суміжний селектор - найближчий суміжний елемент зверху в коді */
+/*
+h1 + p{
+	background:#ccf;
+}
+*/
+/* Суміжний селектор - будь суміжний елемент зверху в коді */
+/*
+h1 ~ *{
+	background:#ffcccc;
+}*/
+</style>
+</head>
+<body>
+	<div>
+		<h1>Заголовок</h1>
+		<p><strong class="cl" title="#">Перший</strong> параграф в div</p>
+		<p><strong>Другий</strong> параграф в div</p>
+		<strong>Просто напівжирний текст в div</strong>
+	</div>
+	<p><strong>Перший</strong> параграф в body</p>
+</body>
+</html>
